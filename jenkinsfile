@@ -1,0 +1,29 @@
+pipeline {
+
+    agent any
+    environment {
+        USER = "Aegl0gqek9fKAgi5pqqXILTu_QDP8oUkyRUPJONeOUfHTXQRkay11gPtgaMvXmKx4O2Eh03G-VWe2htX";
+        PASSWORD = "EMJqWOm2PZM32IRnGYehkLD11g65AhyEBtZTT8belvom0BWg6ompexygxb3CeOKKvqdebvBPXOVNe7g4";
+    }
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Building..'
+                withGradle() {
+                    bat 'gradlew clean build -x test'
+                }
+            }
+        }
+        stage('Test'){
+            steps{
+                echo 'Running automated tests'
+                bat 'gradlew clean test --tests *TokenRunner -Dkarate.env="qa" -Dkarate.USER="${USER}" -Dkarate.PASSWORD="${PASSWORD}" -i'
+            }
+        }
+    }
+    post {
+        always {
+            publishHTML ([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: 'build/karate-reports/', reportFiles: 'karate-summary.html', reportName: 'HTML Report', reportTitles: ''])
+        }
+    }
+}
