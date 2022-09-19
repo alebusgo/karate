@@ -26,5 +26,7 @@ test {
     useJUnitPlatform()
     systemProperty "karate.options", System.properties.getProperty("karate.options")
     systemProperty "karate.env", System.properties.getProperty("karate.env")
+    systemProperty "karate.user", System.properties.getProperty("karate.user")
+    systemProperty "karate.pass", System.properties.getProperty("karate.pass")
     outputs.upToDateWhen { false }
 }

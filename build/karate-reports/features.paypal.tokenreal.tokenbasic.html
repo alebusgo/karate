@@ -10,7 +10,7 @@
     <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
     <script type="text/javascript" src="res/bootstrap.min.js"></script>
     <script type="text/javascript" src="res/karate-report.js"></script>
-    <title>features.paypal.auth.token</title>  
+    <title>features.paypal.tokenreal.tokenbasic</title>  
   </head>
   <body>   
     <div id="root-container">
@@ -30,13 +30,13 @@
     <div>Scenarios</div>
   </div>         
   <div id="nav-date">
-    <div>2022-09-19 10:04:37 AM</div>
+    <div>2022-09-19 04:05:27 PM</div>
   </div>        
 </div>
 
         <div class="nav-container">
           <div class="nav-item passed">
-            <a href="#[1:9]"><span>[1:9]</span> <span>Successful token creation</span></a>
+            <a href="#[1:10]"><span>[1:10]</span> <span>Successful token creation</span></a>
           </div>
         </div>
       </div>
@@ -45,34 +45,34 @@
           <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
           <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
           <span class="feature-label">Feature:</span>
-          <span class="feature-path">features/paypal/auth/token.feature</span><span class="feature-label">|</span>
+          <span class="feature-path">features/paypal/tokenreal/tokenbasic.feature</span><span class="feature-label">|</span>
           <span class="feature-name">Token Request</span>
           <span class="feature-description"></span>
         </div>
         <div class="scenario">
-          <div class="scenario-heading" id="[1:9]">
+          <div class="scenario-heading" id="[1:10]">
             <div class="heading-container">
               <div class="scenario-tags">
                 
               </div>
               <div class="scenario-keyword">
-                Scenario: <span>[1:9]</span>
+                Scenario: <span>[1:10]</span>
                 <span class="scenario-name">Successful token creation</span>
                 <span></span>
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>1845</span>
+              <span>ms:</span>&nbsp;<span>2108</span>
             </div>
           </div>
           <div class="step-row">
-            <div class="step-container" id="[1:9]bg">
+            <div class="step-container" id="[1:10]bg">
               <div class="step-ref bg-step">&gt;&gt;</div>
               <div class="step-cell passed">Background:</div>
             </div>
             <div class="time-cell passed"></div>
           </div>
-          <div data-parent="[1:9]bg"><div>
+          <div data-parent="[1:10]bg"><div>
   
 
   
@@ -85,7 +85,7 @@
         <span>*</span>&nbsp;<span>url &#39;https://api-m.sandbox.paypal.com&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -94,14 +94,14 @@
 
   
 
-  <div class="preformatted" data-parent="0.4">10:04:35.267 karate.env =  qa 
+  <div class="preformatted" data-parent="0.4">16:05:24.959 karate.env =  qa 
 </div>   
 
   
 
 </div>
 </div>
-          <div data-parent="[1:9]bg"><div>
+          <div data-parent="[1:10]bg"><div>
   
 
   
@@ -129,7 +129,7 @@
 
 </div>
 </div>
-          <div data-parent="[1:9]bg"><div>
+          <div data-parent="[1:10]bg"><div>
   
 
   
@@ -139,7 +139,36 @@
       <div class="step-ref bg-step">6</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>header Authorization = &#39;Basic QWVnbDBncWVrOWZLQWdpNXBxcVhJTFR1X1FEUDhvVWt5UlVQSk9OZU9VZkhUWFFSa2F5MTFnUHRnYU12WG1LeDRPMkVoMDNHLVZXZTJodFg6RU1KcVdPbTJQWk0zMklSbkdZZWhrTEQxMWc2NUFoeUVCdFpUVDhiZWx2b20wQldnNm9tcGV4eWd4YjNDZU9LS3ZxZGVidkJQWE9WTmU3ZzQ=&#39;</span>
+        <span>Then</span>&nbsp;<span>print user</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6">16:05:25.006 [print] Aegl0gqek9fKAgi5pqqXILTu_QDP8oUkyRUPJONeOUfHTXQRkay11gPtgaMvXmKx4O2Eh03G-VWe2htX 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:10]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print pass</span>
       </div>
     </div>
     <div class="time-cell passed">1</div>
@@ -151,26 +180,27 @@
 
   
 
-     
+  <div class="preformatted" data-parent="0.7">16:05:25.021 [print] EMJqWOm2PZM32IRnGYehkLD11g65AhyEBtZTT8belvom0BWg6ompexygxb3CeOKKvqdebvBPXOVNe7g4 
+</div>   
 
   
 
 </div>
 </div>
-          <div><div>
+          <div data-parent="[1:10]bg"><div>
   
 
   
 
   <div class="step-row">
-    <div class="step-container" id="0.10">
-      <div class="step-ref passed">10</div>
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
       
       <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>path &#39;/v1/oauth2/token&#39;</span>
+        <span>*</span>&nbsp;<span>header Authorization = call read(&#39;basic-auth.js&#39;) {username: &#39;#(user)&#39;, password: &#39;#(pass)&#39; }</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">113</div>
   </div>
 
    
@@ -195,10 +225,10 @@
       <div class="step-ref passed">11</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>request &#39;grant_type=client_credentials&#39;</span>
+        <span>Given</span>&nbsp;<span>path &#39;/v1/oauth2/token&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -223,10 +253,10 @@
       <div class="step-ref passed">12</div>
       
       <div class="step-cell passed">
-        <span>When</span>&nbsp;<span>method POST</span>
+        <span>And</span>&nbsp;<span>request &#39;grant_type=client_credentials&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">1831</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -235,39 +265,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.12">10:04:36.001 request:
-1 &gt; POST https://api-m.sandbox.paypal.com/v1/oauth2/token
-1 &gt; Content-Type: application/x-www-form-urlencoded; charset=UTF-8
-1 &gt; Authorization: Basic QWVnbDBncWVrOWZLQWdpNXBxcVhJTFR1X1FEUDhvVWt5UlVQSk9OZU9VZkhUWFFSa2F5MTFnUHRnYU12WG1LeDRPMkVoMDNHLVZXZTJodFg6RU1KcVdPbTJQWk0zMklSbkdZZWhrTEQxMWc2NUFoeUVCdFpUVDhiZWx2b20wQldnNm9tcGV4eWd4YjNDZU9LS3ZxZGVidkJQWE9WTmU3ZzQ=
-1 &gt; Content-Length: 29
-1 &gt; Host: api-m.sandbox.paypal.com
-1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_321)
-1 &gt; Accept-Encoding: gzip,deflate
-grant_type=client_credentials
-
-10:04:37.111 response time in milliseconds: 1110
-1 &lt; 200
-1 &lt; Connection: keep-alive
-1 &lt; Content-Type: application/json
-1 &lt; Server: nginx/1.18.0 (Ubuntu)
-1 &lt; Cache-Control: max-age=0, no-cache, no-store, must-revalidate
-1 &lt; Paypal-Debug-Id: c0b908319cbbe
-1 &lt; Pragma: no-cache
-1 &lt; X-Paypal-Token-Service: IAAS
-1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains
-1 &lt; Accept-Ranges: none
-1 &lt; Via: 1.1 varnish, 1.1 varnish
-1 &lt; Edge-Control: max-age=0
-1 &lt; Date: Mon, 19 Sep 2022 15:04:37 GMT
-1 &lt; X-Served-By: cache-cgh11163-CGH, cache-bog2260037-BOG
-1 &lt; X-Cache: MISS, MISS
-1 &lt; X-Cache-Hits: 0, 0
-1 &lt; X-Timer: S1663599877.739216,VS0,VE713
-1 &lt; Vary: Accept-Encoding
-1 &lt; transfer-encoding: chunked
-{&quot;scope&quot;:&quot;https://uri.paypal.com/services/invoicing https://uri.paypal.com/services/disputes/read-buyer https://uri.paypal.com/services/payments/realtimepayment https://uri.paypal.com/services/disputes/update-seller https://uri.paypal.com/services/payments/payment/authcapture openid https://uri.paypal.com/services/disputes/read-seller https://uri.paypal.com/services/payments/refund https://api.paypal.com/v1/vault/credit-card https://api.paypal.com/v1/payments/.* https://uri.paypal.com/payments/payouts https://api.paypal.com/v1/vault/credit-card/.* https://uri.paypal.com/services/shipping/trackers/readwrite https://uri.paypal.com/services/subscriptions https://uri.paypal.com/services/applications/webhooks&quot;,&quot;access_token&quot;:&quot;A21AAJ9RRfIhBOOXiYGMMkB6SO_VDL7vwwtoD07vHEJSMYq8PpMxi-rqLL9hJY3cxCFLIVvSNSotETuAeoyCPYG12RA-nBcEg&quot;,&quot;token_type&quot;:&quot;Bearer&quot;,&quot;app_id&quot;:&quot;APP-80W284485P519543T&quot;,&quot;expires_in&quot;:32400,&quot;nonce&quot;:&quot;2022-09-19T15:04:37Z1ij4ufVyEe8zvke-VQOO1Yz6Jpb1YyeVhnmwaP4mLGk&quot;}
-</div>   
+     
 
   
 
@@ -281,6 +279,66 @@ grant_type=client_credentials
   <div class="step-row">
     <div class="step-container" id="0.13">
       <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1978</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.13">16:05:25.789 request:
+1 &gt; POST https://api-m.sandbox.paypal.com/v1/oauth2/token
+1 &gt; Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+1 &gt; Authorization: Basic QWVnbDBncWVrOWZLQWdpNXBxcVhJTFR1X1FEUDhvVWt5UlVQSk9OZU9VZkhUWFFSa2F5MTFnUHRnYU12WG1LeDRPMkVoMDNHLVZXZTJodFg6RU1KcVdPbTJQWk0zMklSbkdZZWhrTEQxMWc2NUFoeUVCdFpUVDhiZWx2b20wQldnNm9tcGV4eWd4YjNDZU9LS3ZxZGVidkJQWE9WTmU3ZzQ=
+1 &gt; Content-Length: 29
+1 &gt; Host: api-m.sandbox.paypal.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_321)
+1 &gt; Accept-Encoding: gzip,deflate
+grant_type=client_credentials
+
+16:05:27.102 response time in milliseconds: 1297
+1 &lt; 200
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json
+1 &lt; Server: nginx/1.18.0 (Ubuntu)
+1 &lt; Cache-Control: max-age=0, no-cache, no-store, must-revalidate
+1 &lt; Paypal-Debug-Id: c4e4da528646e
+1 &lt; Pragma: no-cache
+1 &lt; X-Paypal-Token-Service: IAAS
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 &lt; Accept-Ranges: none
+1 &lt; Via: 1.1 varnish, 1.1 varnish
+1 &lt; Edge-Control: max-age=0
+1 &lt; Date: Mon, 19 Sep 2022 21:05:27 GMT
+1 &lt; X-Served-By: cache-cgh11163-CGH, cache-bog2260020-BOG
+1 &lt; X-Cache: MISS, MISS
+1 &lt; X-Cache-Hits: 0, 0
+1 &lt; X-Timer: S1663621527.884080,VS0,VE791
+1 &lt; Vary: Accept-Encoding
+1 &lt; transfer-encoding: chunked
+{&quot;scope&quot;:&quot;https://uri.paypal.com/services/invoicing https://uri.paypal.com/services/disputes/read-buyer https://uri.paypal.com/services/payments/realtimepayment https://uri.paypal.com/services/disputes/update-seller https://uri.paypal.com/services/payments/payment/authcapture openid https://uri.paypal.com/services/disputes/read-seller https://uri.paypal.com/services/payments/refund https://api.paypal.com/v1/vault/credit-card https://api.paypal.com/v1/payments/.* https://uri.paypal.com/payments/payouts https://api.paypal.com/v1/vault/credit-card/.* https://uri.paypal.com/services/shipping/trackers/readwrite https://uri.paypal.com/services/subscriptions https://uri.paypal.com/services/applications/webhooks&quot;,&quot;access_token&quot;:&quot;A21AAKraFEmoQYzr5NlL6_zb8O5NwwY1ZbWucEbpU4k-GnJlqd_By4iS7YXONr29ojPL_RNcJEYpRDLOQ1rxF4vY9-kwLIlNA&quot;,&quot;token_type&quot;:&quot;Bearer&quot;,&quot;app_id&quot;:&quot;APP-80W284485P519543T&quot;,&quot;expires_in&quot;:32283,&quot;nonce&quot;:&quot;2022-09-19T21:03:30ZyinSyNxH3CtkSQDrf1VjWqxAnJO7kxflRN1M4z6b_U4&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref passed">14</div>
       
       <div class="step-cell passed">
         <span>Then</span>&nbsp;<span>status 200</span>
@@ -307,14 +365,14 @@ grant_type=client_credentials
   
 
   <div class="step-row">
-    <div class="step-container" id="0.14">
-      <div class="step-ref passed">14</div>
+    <div class="step-container" id="0.15">
+      <div class="step-ref passed">15</div>
       
       <div class="step-cell passed">
         <span>*</span>&nbsp;<span>print &#39;Response: &#39;,response</span>
       </div>
     </div>
-    <div class="time-cell passed">9</div>
+    <div class="time-cell passed">6</div>
   </div>
 
    
@@ -323,13 +381,13 @@ grant_type=client_credentials
 
   
 
-  <div class="preformatted" data-parent="0.14">10:04:37.173 [print] Response:  {
+  <div class="preformatted" data-parent="0.15">16:05:27.117 [print] Response:  {
   &quot;scope&quot;: &quot;https://uri.paypal.com/services/invoicing https://uri.paypal.com/services/disputes/read-buyer https://uri.paypal.com/services/payments/realtimepayment https://uri.paypal.com/services/disputes/update-seller https://uri.paypal.com/services/payments/payment/authcapture openid https://uri.paypal.com/services/disputes/read-seller https://uri.paypal.com/services/payments/refund https://api.paypal.com/v1/vault/credit-card https://api.paypal.com/v1/payments/.* https://uri.paypal.com/payments/payouts https://api.paypal.com/v1/vault/credit-card/.* https://uri.paypal.com/services/shipping/trackers/readwrite https://uri.paypal.com/services/subscriptions https://uri.paypal.com/services/applications/webhooks&quot;,
-  &quot;access_token&quot;: &quot;A21AAJ9RRfIhBOOXiYGMMkB6SO_VDL7vwwtoD07vHEJSMYq8PpMxi-rqLL9hJY3cxCFLIVvSNSotETuAeoyCPYG12RA-nBcEg&quot;,
+  &quot;access_token&quot;: &quot;A21AAKraFEmoQYzr5NlL6_zb8O5NwwY1ZbWucEbpU4k-GnJlqd_By4iS7YXONr29ojPL_RNcJEYpRDLOQ1rxF4vY9-kwLIlNA&quot;,
   &quot;token_type&quot;: &quot;Bearer&quot;,
   &quot;app_id&quot;: &quot;APP-80W284485P519543T&quot;,
-  &quot;expires_in&quot;: 32400,
-  &quot;nonce&quot;: &quot;2022-09-19T15:04:37Z1ij4ufVyEe8zvke-VQOO1Yz6Jpb1YyeVhnmwaP4mLGk&quot;
+  &quot;expires_in&quot;: 32283,
+  &quot;nonce&quot;: &quot;2022-09-19T21:03:30ZyinSyNxH3CtkSQDrf1VjWqxAnJO7kxflRN1M4z6b_U4&quot;
 }
  
 </div>   
@@ -344,14 +402,14 @@ grant_type=client_credentials
   
 
   <div class="step-row">
-    <div class="step-container" id="0.15">
-      <div class="step-ref passed">15</div>
+    <div class="step-container" id="0.16">
+      <div class="step-ref passed">16</div>
       
       <div class="step-cell passed">
         <span>*</span>&nbsp;<span>def authToken = response.access_token</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    

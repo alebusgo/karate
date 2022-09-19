@@ -12,8 +12,8 @@ function fn(){
     }
 
     if(env == 'qa'){
-        config.user = karate.properties['karate.USER']
-        config.pass = karate.properties['karate.PASSWORD']
+        config.user = karate.properties['karate.user']
+        config.pass = karate.properties['karate.pass']
     } else if (env == 'uat'){
         config.user = 'another'
         config.pass = 'another'
