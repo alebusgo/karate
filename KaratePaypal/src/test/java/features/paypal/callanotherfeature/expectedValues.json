@@ -1,0 +1,26 @@
+{
+  "id": "#string",
+  "status": "CREATED",
+  "links": [
+    {
+      "href": "#notnull",
+      "rel": "self",
+      "method": "GET"
+    },
+    {
+      "href": "#notnull",
+      "rel": "approve",
+      "method": "GET"
+    },
+    {
+      "href": "#notnull",
+      "rel": "update",
+      "method": "PATCH"
+    },
+    {
+      "href": "#notnull",
+      "rel": "capture",
+      "method": "POST"
+    }
+  ]
+}
