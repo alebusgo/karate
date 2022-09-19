@@ -2,8 +2,8 @@ pipeline {
 
     agent any
     environment {
-        USER = "Aegl0gqek9fKAgi5pqqXILTu_QDP8oUkyRUPJONeOUfHTXQRkay11gPtgaMvXmKx4O2Eh03G-VWe2htX";
-        PASSWORD = "EMJqWOm2PZM32IRnGYehkLD11g65AhyEBtZTT8belvom0BWg6ompexygxb3CeOKKvqdebvBPXOVNe7g4";
+
+
     }
     stages {
         stage('Build') {
@@ -16,10 +16,12 @@ pipeline {
         }
         stage('Test'){
             steps{
-                withEnv() {
+                withEnv(['USER=Aegl0gqek9fKAgi5pqqXILTu_QDP8oUkyRUPJONeOUfHTXQRkay11gPtgaMvXmKx4O2Eh03G-VWe2htX',
+                         'PASSWORD="EMJqWOm2PZM32IRnGYehkLD11g65AhyEBtZTT8belvom0BWg6ompexygxb3CeOKKvqdebvBPXOVNe7g4'
+                ]) {
                 }
                     echo 'Running automated tests'
-                    bat 'gradlew clean test --tests *TokenBasicRunner -Dkarate.env="qa" -Dkarate.user="${env.USER}" -Dkarate.pass="${env.PASSWORD}" -i'
+                    bat 'gradlew clean test --tests *TokenBasicRunner -Dkarate.env="qa" -Dkarate.user=$USER -Dkarate.pass=$PASSWORD -i'
             }
         }
     }
