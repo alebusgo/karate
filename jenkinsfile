@@ -1,11 +1,6 @@
 pipeline {
 
     agent any
-    environment {
-        USER_NAME = 'Aegl0gqek9fKAgi5pqqXILTu_QDP8oUkyRUPJONeOUfHTXQRkay11gPtgaMvXmKx4O2Eh03G-VWe2htX'
-        USER_ID = 'EMJqWOm2PZM32IRnGYehkLD11g65AhyEBtZTT8belvom0BWg6ompexygxb3CeOKKvqdebvBPXOVNe7g4'
-    }
-
     stages {
         stage('Build') {
             steps {
@@ -16,11 +11,15 @@ pipeline {
             }
         }
         stage('Test'){
-            steps{
-               echo 'Running automated tests'
-               echo "User Name = ${env.USER_NAME}"
-               bat 'gradlew clean test --tests *TokenBasicRunner -Dkarate.env="qa" -Dkarate.user=${USER_NAME} -Dkarate.pass=${USER_ID} -i'
+            environment {
+                    USER_NAME = 'Aegl0gqek9fKAgi5pqqXILTu_QDP8oUkyRUPJONeOUfHTXQRkay11gPtgaMvXmKx4O2Eh03G-VWe2htX'
+                    USER_ID = 'EMJqWOm2PZM32IRnGYehkLD11g65AhyEBtZTT8belvom0BWg6ompexygxb3CeOKKvqdebvBPXOVNe7g4'
             }
+                steps{
+                   echo 'Running automated tests'
+                   echo "User Name = ${env.USER_NAME}"
+                   bat 'gradlew clean test --tests *TokenBasicRunner -Dkarate.env="qa" -Dkarate.user=${env.USER_NAME} -Dkarate.pass=${env.USER_ID} -i'
+                }
         }
     }
     post {
