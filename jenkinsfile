@@ -19,7 +19,7 @@ pipeline {
             steps{
                echo 'Running automated tests'
                echo "User Name = ${env.USER_NAME}"
-               bat 'gradlew clean test --tests *TokenBasicRunner -Dkarate.env="qa" -Dkarate.user=${env.USER_NAME} -Dkarate.pass=${env.USER_ID} -i'
+               bat 'gradlew clean test --tests *TokenBasicRunner -Dkarate.env="qa" -Dkarate.user='${env.USER_NAME}' -Dkarate.pass='${env.USER_ID}' -i'
             }
         }
     }
